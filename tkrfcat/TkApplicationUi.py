@@ -175,7 +175,7 @@ class ApplicationUi(BaseUi):
             self._txt_send_status.insert(END, "\nBinary: " + rf_bin_message)
 
             # text to hex
-            rf_hex_message = rf_message.encode().hex()
+            rf_hex_message = rf_message
             self._txt_send_status.insert(END, "\nHEX: " + rf_hex_message)
 
             # add hex to list and count bytes
